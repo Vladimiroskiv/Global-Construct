@@ -23,3 +23,20 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+
+// ---------------------------------
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.querySelectorAll(".tab-contents");
+function opentab(tabname) {
+    for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (let tabcontent of tabcontents) {
+        tabcontent.style.display = "none";
+    }
+    event.currentTarget.classList.add("active-link");
+    document.querySelectorAll("." + tabname).forEach(tabcontent => {
+        tabcontent.style.display = "block";
+    });
+}
