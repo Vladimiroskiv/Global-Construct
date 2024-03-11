@@ -128,3 +128,27 @@
   width: auto; 
   transition: 0.3s; 
 }
+
+#header .brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+#header .brand a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#header .brand #brand-logo {
+  height: auto; 
+  width: auto; 
+}
+
+#header #brand-text {
+  color: white; 
+  font-size: 3rem; 
+  margin-left: 10px; 
+  white-space: nowrap; 
+}
