@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
     const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
     const header = document.querySelector('.header.container');
-    const brandText = document.getElementById('brand-text'); // Asigură-te că ai adăugat acest element în HTML
+    const brandText = document.getElementById('brand-text'); 
 
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');

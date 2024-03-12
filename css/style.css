@@ -137,7 +137,7 @@ p {
   cursor: pointer;
 }
 
-.service-item:hover {
+#services .service-item a:hover {
   transform: scale(1.05);
 }
 
@@ -146,10 +146,21 @@ p {
   transition: transform 0.3s ease;
 }
 
-.service-item:hover .icon img,
-.service-item:hover h2 {
+#services .service-item a:hover .icon img,
+#services .service-item a:hover h2 {
   transform: scale(1.1);
 }
+
+#services .service-item a {
+  color: inherit; /* Păstrează culoarea textului neschimbată */
+  text-decoration: none; /* Înlătură sublinierea */
+  display: flex; /* Menține flex layout-ul */
+  flex-direction: column; /* Respectă direcția coloană */
+  align-items: center; /* Centrează conținutul */
+  width: 100%; /* Asigură-te că link-ul ocupă întregul card */
+  height: 100%; /* Întinde link-ul pe întreaga înălțime a cardului */
+}
+
 
 /* End Services Section */
 
@@ -321,6 +332,44 @@ p {
 #contact .contact-info h3 a {
   color: black;
   text-decoration: none;
+}
+#contact .contact-form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+#contact .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .contact-form form input[type="text"],
+#contact .contact-form form input[type="email"],
+#contact .contact-form form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#contact .contact-form form textarea {
+  resize: vertical;
+}
+
+#contact .contact-form form .submit-btn {
+  padding: 10px 30px;
+  background-color: #020d43;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact .contact-form form .submit-btn:hover {
+  background-color: #ffca00;
+  color: #020d43;
 }
 /*End contact Section */
 
