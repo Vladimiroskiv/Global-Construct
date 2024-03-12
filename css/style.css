@@ -334,7 +334,7 @@ p {
   text-decoration: none;
 }
 #contact .contact-form {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   padding: 20px;
   text-align: left;
@@ -351,7 +351,7 @@ p {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #020d43;
 }
 
 #contact .contact-form form textarea {
