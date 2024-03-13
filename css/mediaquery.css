@@ -1,0 +1,195 @@
+/* Media Query For Mobile */
+@media only screen and (max-width: 767px) {
+    #services .service-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    #services .service-bottom .service-item {
+      flex-basis: 45%;
+      margin: 5px;
+      padding: 10px;
+      position: relative;
+    }
+  
+    .service-item::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      background-image: linear-gradient(60deg, #020d43 0%, #000416 100%);
+      z-index: -1;
+      border-radius: 10px;
+    }
+  
+    .service-item img {
+      width: auto;
+      max-width: 80px;
+      margin: 0 auto 15px;
+    }
+  
+    .service-item h2,
+    .service-item p {
+      padding: 0 10px;
+    }
+  
+    #projects .all-projects {
+      flex-direction: column;
+    }
+  
+    #projects .project-item {
+      flex-direction: column;
+      margin: 10px 0;
+      height: auto;
+    }
+  
+    #projects .project-info,
+    #projects .project-img {
+      width: 100%;
+      height: auto;
+    }
+  
+    #projects .project-img {
+      order: -1;
+    }
+  }
+  /* End Media Query For Mobile */
+  
+  /* Media Query For Tablet */
+  @media only screen and (min-width: 768px) {
+    .cta {
+      font-size: 2.5rem;
+      padding: 20px 60px;
+    }
+    h1.section-title {
+      font-size: 6rem;
+    }
+  
+    /* Hero */
+    #hero h1 {
+      font-size: 7rem;
+    }
+    /* End Hero */
+  
+    /* Services Section */
+    #services .service-bottom .service-item {
+      flex-basis: 45%;
+      margin: 2.5%;
+    }
+    /* End Services Section */
+  
+    /* Project */
+    #projects .project-item {
+      flex-direction: row;
+    }
+    #projects .project-item:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    #projects .project-item {
+      height: 400px;
+      margin: 0;
+      width: 100%;
+      border-radius: 0;
+    }
+    #projects .all-projects .project-info {
+      height: 100%;
+    }
+    #projects .all-projects .project-img {
+      height: 100%;
+    }
+    /* End Project */
+  
+    /* About */
+    #about .about {
+      flex-direction: row;
+    }
+    #about .col-left {
+      width: 600px;
+      height: 400px;
+      padding-left: 60px;
+    }
+    #about .about .col-left .about-img::after {
+      left: -45px;
+      top: 34px;
+      height: 98%;
+      width: 98%;
+      border: 10px solid #ffca00;
+    }
+    #about .col-right {
+      text-align: left;
+      padding: 30px;
+    }
+    #about .col-right h1 {
+      text-align: left;
+    }
+    /* End About */
+  
+    /* contact  */
+    #contact .contact {
+      flex-direction: column;
+      padding: 100px 0;
+      align-items: center;
+      justify-content: center;
+      min-width: 20vh;
+    }
+    #contact .contact-items {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 0;
+    }
+    #contact .contact-item {
+      width: 30%;
+      margin: 0;
+      flex-direction: row;
+    }
+    #contact .contact-item .icon {
+      height: 100px;
+      width: 100px;
+    }
+    #contact .contact-item .icon img {
+      object-fit: contain;
+    }
+    #contact .contact-item .contact-info {
+      width: 100%;
+      text-align: left;
+      padding-left: 20px;
+    }
+    /* End contact  */
+  }
+  /* End Media Query For Tablet */
+  
+  /* Media Query For Desktop */
+  @media only screen and (min-width: 1200px) {
+    /* header */
+    #header .hamburger {
+      display: none;
+    }
+    #header .nav-list ul {
+      position: initial;
+      display: block;
+      height: auto;
+      width: fit-content;
+      background-color: transparent;
+    }
+    #header .nav-list ul li {
+      display: inline-block;
+    }
+    #header .nav-list ul li a {
+      font-size: 1.8rem;
+    }
+    #header .nav-list ul a:after {
+      display: none;
+    }
+    /* End header */
+  
+    #services .service-bottom .service-item {
+      flex-basis: 22%;
+      margin: 1.5%;
+    }
+  }
+  /* End  Media Query For Desktop */
